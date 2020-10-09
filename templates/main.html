@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
+    <title>Business Lounge</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="manager.html">
     <link rel="stylesheet" href="engineer.html">
     <link rel="stylesheet" href="intern.html">
+    <link rel="stylesheet" href="team.html">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
@@ -23,56 +24,24 @@
             </div>
         </div>
     </div>
-    <!-- 
-
-
-            <div class="row" class="card-header" >
-            <div class="team-area col-4 d-flex justify-content-center card">
-               <h2 class="card-title">Marie Campbell</h2>
-               <h4><i class="fas fa-mug-hot mr-2"></i>Manager</h4> 
-                <p>7892</p>
-            </div>
-               <p>Email: <a href="mailto:mariec@businesslounge.com">mariec@businesslounge.com</a></p>
-            </div>
-       
-
-       
-            <div class="team-area col-4 d-flex justify-content-center card">
-                <h2 class="card-title">Jeffrey Miller</h2>
-               <h4><i class="fas fa-glasses mr-2"></i>Engineer</h4>
-               <p>6589</p>
-               <p>Email: <a href="mailto:jeffm@businesslounge.com">jeffm@businesslounge.com</a></p>
-               <p>Github: <a href="jmiller.github.com">jmiller.github.com</a></p>
-
-            </div>
-        
-
-        
-            <div class="team-area col-4 d-flex justify-content-center card card-header">
-                <h2 class="card-title">Leslie Weaver</h2>
-                <h4><i class="fas fa-user-graduate mr-2"></i>Intern</h4>
-                <p>1234</p>
-                <p>Email: <a href="mailto:lesliew@businesslounge.com">lesliew@businesslounge.com</a></p>
-                <p>School: LaCappala University</p>
-            </div>
-
                    
-    </div> -->
+
+    
     <div class="container mt-4">
         <div class="row">
             <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
                 <div class="card-header ">
-                    <h2 class="card-title">Maria Campbell</h2>
+                    <h2 class="card-title">{{ name }}</h2>
                     <h3 class="card-title">
-                        <i class="fas fa-mug-hot mr-2"></i></i>Manager
+                        <i class="fas fa-mug-hot mr-2"></i></i>{{ role }}
                     </h3>
                 </div>
                 <div class="card-body ">
                     <ul class="list-group">
-                        <li class="list-group-item">ID: 2345</li>
+                        <li class="list-group-item">ID: {{ id }}</li>
                         <li class="list-group-item">
-                            Email: <a href="mailto:{{ email }}">mcampbell@businesslounge.com}</a>
-                            <li class="list-group-item">Office number: 1</li>
+                            Email: <a href="mailto:{{ email }}">{{ email }}</a>
+                            <li class="list-group-item">Office number: {{ office number }}</li>
                         </li>
                     </ul>
                 </div>
@@ -80,35 +49,34 @@
 
             <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
                 <div class="card-header">
-                    <h2 class="card-title">Hassan Faroq</h2>
+                    <h2 class="card-title">{{ name }}</h2>
                     <h3 class="card-title">
-                        <i class="fas fa-glasses mr-2"></i>Engineer
+                        <i class="fas fa-glasses mr-2"></i>{{ role }}
                     </h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
-                        <li class="list-group-item">ID:5648</li>
+                        <li class="list-group-item">ID:  {{ id }}</li>
                         <li class="list-group-item">
-                            Email: <a href="mailto:{{ email }}">hfaroq@businesslounge.com</a></li>
-                            <li class="list-group-item">Github: <a href="https//jmiller.github.com">jmiller.github.com</a></li>
-                        </li>
+                            Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
                 </div>
             </div>
 
             <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
                 <div class="card-header">
-                    <h2 class="card-title">Nicole Lafort</h2>
+                    <h2 class="card-title">{{ name }}</h2>
                     <h3 class="card-title">
-                        <i class="fas fa-user-graduate mr-2"></i>Intern
+                        <i class="fas fa-user-graduate mr-2"></i>{{ Intern }}
                     </h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group border-success">
-                        <li class="list-group-item">ID: 1237</li>
+                        <li class="list-group-item">ID: {{ id }} </li>
                         <li class="list-group-item">
-                            Email: <a href="mailto:{{ email }}">nlafort@businesslounge.com</a>
+                            Email: <a href="mailto:{{ email }}">{{ email }}</a>
                         </li>
-                        <li class="list-group-item">School: Spelman College</li>
+                        <li class="list-group-item">School: {{ School }}</li>
                     </ul>
                 </div>
             </div>

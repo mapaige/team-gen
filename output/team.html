@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Business Lounge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.html">
+    <link rel="stylesheet" href="engineer.html">
+    <link rel="stylesheet" href="intern.html">
+    <link rel="stylesheet" href="team.html">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 jumbotron mb-3 team-heading ">
+              <h1 class="text-center">Business Lounge Team</h1>
+          </div>
+      </div>
+  </div>
+                 
+
+  
+  <div class="container mt-4">
+      <div class="row">
+          <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
+              <div class="card-header ">
+                  <h2 class="card-title">Maria Campbell</h2>
+                  <h3 class="card-title">
+                      <i class="fas fa-mug-hot mr-2"></i></i>Manager
+                  </h3>
+              </div>
+              <div class="card-body ">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: 2345</li>
+                      <li class="list-group-item">
+                          Email: <a href="mailto:{{ email }}">mcampbell@businesslounge.com}</a>
+                          <li class="list-group-item">Office number: 1</li>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
+              <div class="card-header">
+                  <h2 class="card-title">Hassan Faroq</h2>
+                  <h3 class="card-title">
+                      <i class="fas fa-glasses mr-2"></i>Engineer
+                  </h3>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID:5648</li>
+                      <li class="list-group-item">
+                          Email: <a href="mailto:{{ email }}">hfaroq@businesslounge.com</a></li>
+                          <li class="list-group-item">Github: <a href="https//jmiller.github.com">jmiller.github.com</a></li>
+                      </li>
+              </div>
+          </div>
+
+          <div class="card employee-card team-area col-4 d-flex justify-content-center card border-success">
+              <div class="card-header">
+                  <h2 class="card-title">Nicole Lafort</h2>
+                  <h3 class="card-title">
+                      <i class="fas fa-user-graduate mr-2"></i>Intern
+                  </h3>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group border-success">
+                      <li class="list-group-item">ID: 1237</li>
+                      <li class="list-group-item">
+                          Email: <a href="mailto:{{ email }}">nlafort@businesslounge.com</a>
+                      </li>
+                      <li class="list-group-item">School: Spelman College</li>
+                  </ul>
+              </div>
+          </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
