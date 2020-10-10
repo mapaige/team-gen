@@ -1,0 +1,10 @@
+.row{
+  background-color: green;
+}
+
+.jumbotron{
+  background-color: lightsalmon;
+  color: rgb(44, 109, 44);
+}
+.card-header{
+  color: coral;
